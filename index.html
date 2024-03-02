@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>survey form</title>
+  </head>
+  <body>
+<h1 id="title">Survey Form</h1>
+<p id="description">Thank you for taking your time and participate on this survey!</p>
+<form id="survey-form"/>
+<div class="survey-elements">
+  <label id="name-label">Enter Your Name</label>
+  <input placeholder="Your Name"id="name" type="text" required/>
+</div> 
+ <div class="survey-elements">
+  <label id="email-label">Enter Your Email</label>
+  <input placeholder="Your Email ID" id="email" type="email" required/>
+</div> 
+<div class="survey-elements">
+  <label id="number-label">Enter Your Age</label>
+  <input placeholder="Your Age" id="number" type="number" min="18" max="110" />
+</div> 
+<div class="survey-elements">
+  <label id="select-label">What is your most favorite food?</label>
+  <select id="dropdown">
+    <option></option>
+    <option>Pizza</option>
+    <option>Burger</option>
+    <option>Sandwich</option>
+    <option>Chicken</option>
+  </select>
+</div>
+<div class="survey-elements">
+  <label>Choose what you prefer!</label>
+  <div>
+  <label><input value="dog" type="radio" name="personality"/>Dog</label>
+  </div>
+  <div>
+  <label><input type="radio" value="cat" name="personality"/>Cat</label>
+  </div>
+</div> 
+<div class="survey-elements">
+  <label>What is your opinion/opinions?</label>
+  <div>
+  <label><input type="checkbox" value="HEART"/>People should follow their heart</label>
+  </div>
+  <div>
+  <label><input type="checkbox" value="HEAD"/>People should follow their brain/head</label>
+  </div>
+  <div>
+  <label><input type="checkbox" value="HEAD"/>But sometimes it's good to follow their brain/head too</label>
+  </div>
+  <div>
+  <label><input type="checkbox" value="HEAD"/>But sometimes it's good to follow their heart too</label>
+  </div>
+  <div>
+  <label><input type="checkbox" value="NONE"/>None, Just go with the flow</label>
+  </div>
+  <div>
+  <label><input type="checkbox" value="IDK"/>I am not sure what to choose </label>
+  </div>
+</div> 
+<div class="survey-elements">
+  <label>Would you like to add anything else about yourself?</label>
+  <textarea type="text">
+  </textarea>
+</div> 
+<div class="survey-elements">
+<button type="submit" id="submit"> Submit</button>
+</div>
+</form>
+</body>
+</html> 
